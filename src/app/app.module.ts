@@ -15,12 +15,14 @@ import { MatToolbarModule,
 import { HttpClientModule } from '@angular/common/http';
 import { ArticlesTechnologyComponent } from './articles-technology/articles-technology.component';
 import { NewsapiService } from './services/newsapi.service';
+import { ArticlesJavascriptComponent } from './articles-javascript/articles-javascript.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ArticlesTechnologyComponent
+    ArticlesTechnologyComponent,
+    ArticlesJavascriptComponent
   ],
   imports: [
     BrowserModule,
