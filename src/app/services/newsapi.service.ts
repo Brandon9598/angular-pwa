@@ -25,5 +25,6 @@ export class NewsapiService {
     return this.http
       .get('https://newsapi.org/v2/everything?q=javascript&sortBy=latest&apiKey=' +
       this.api_key)
+      .pipe(map((data: any) => data.articles));
   }
 }

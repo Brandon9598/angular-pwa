@@ -8,12 +8,12 @@ import { NewsapiService } from '../services/newsapi.service';
   styleUrls: ['./articles-javascript.component.css']
 })
 export class ArticlesJavascriptComponent implements OnInit {
-  JSartciles$: Observable<any>;
+  JSarticles$: Observable<any>;
 
   constructor(private newsapi: NewsapiService) { }
 
   ngOnInit() {
-    this.JSartciles$ = this.newsapi.getArticlesJavascript();
+    this.JSarticles$ = this.newsapi.getArticlesJavascript(); 
   }
 
 }
