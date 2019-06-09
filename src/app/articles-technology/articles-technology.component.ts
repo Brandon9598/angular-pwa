@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { NewsapiService } from '../services/newsapi.service';
 
 @Component({
   selector: 'app-articles-technology',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticlesTechnologyComponent implements OnInit {
 
-  constructor() { }
+  articles$: Observable<any>;
+
+  constructor(private newsapi: NewsapiService) { }
 
   ngOnInit() {
+    this.articles$ = this.newsapi.getArticlesTechnology();
   }
 
 }
