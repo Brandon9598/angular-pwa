@@ -4,6 +4,7 @@ import { ArticlesTechnologyComponent } from './articles-technology/articles-tech
 import { ArticlesJavascriptComponent } from './articles-javascript/articles-javascript.component';
 
 const routes: Routes = [
+  {path: '', component: ArticlesTechnologyComponent},  
   {path: 'articles', component: ArticlesTechnologyComponent},
   {path: 'articles-javascript', component: ArticlesJavascriptComponent}
 ];

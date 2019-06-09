@@ -10,6 +10,11 @@
             "/index.html",
             "/*.css",
             "/*.js"
+          ],
+          "versionedFiles": [
+            "/*.bundle.css",
+            "/*.bundle.js",
+            "/*.chunk.js"
           ]
         }
       }, {
@@ -23,5 +28,17 @@
           ]
         }
       }
-    ]
+    ],
+    "dataGroups": [
+      {
+        "name": "from-api",
+        "urls": ["/", "/articles", "javascript-articles"],
+        "cacheConfig": {
+          "strategy": "freshness",
+          "maxSize": 15,
+          "maxAge": "1h",
+          "timeout": "5s"
+        }
+      }
+    ],
   }
